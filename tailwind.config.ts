@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import tailwindScrollbar from "tailwind-scrollbar";
 
 export default {
   content: [
@@ -11,8 +12,9 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        accent: "#a4f839",
       },
     },
   },
-  plugins: [],
+  plugins: [tailwindScrollbar],
 } satisfies Config;
